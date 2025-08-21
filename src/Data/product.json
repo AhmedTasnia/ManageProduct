@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "name": "Premium Gel Pen",
+    "description": "Smooth writing gel pen with vibrant ink colors, ideal for note-taking and journaling.",
+    "price": 2.99,
+    "rating": 4.8,
+    "advantage": "Smooth ink flow, comfortable grip, long-lasting"
+  },
+  {
+    "id": 2,
+    "name": "A4 Notebook",
+    "description": "100-page ruled notebook suitable for school, office, or personal use.",
+    "price": 4.5,
+    "rating": 4.5,
+    "advantage": "High-quality paper, durable cover, portable"
+  },
+  {
+    "id": 3,
+    "name": "Mechanical Pencil",
+    "description": "0.5mm lead mechanical pencil with eraser, perfect for precision writing.",
+    "price": 3.2,
+    "rating": 4.6,
+    "advantage": "Refillable, precise lines, comfortable grip"
+  },
+  {
+    "id": 4,
+    "name": "Color Pencil Set",
+    "description": "Set of 24 vibrant colored pencils for drawing, sketching, and coloring.",
+    "price": 6.99,
+    "rating": 4.7,
+    "advantage": "Rich pigments, smooth blending, durable pencils"
+  },
+  {
+    "id": 5,
+    "name": "Highlighter Set",
+    "description": "Pack of 6 neon highlighters, perfect for marking important text.",
+    "price": 5.5,
+    "rating": 4.4,
+    "advantage": "Bright colors, quick-dry ink, non-toxic"
+  },
+  {
+    "id": 6,
+    "name": "Sticky Notes",
+    "description": "Multi-colored sticky notes pack for reminders and organizing work.",
+    "price": 3.0,
+    "rating": 4.3,
+    "advantage": "Strong adhesive, easy to peel, reusable"
+  },
+  {
+    "id": 7,
+    "name": "Stapler",
+    "description": "Compact stapler with 1000 staples included, ideal for office use.",
+    "price": 7.5,
+    "rating": 4.6,
+    "advantage": "Durable metal design, smooth stapling, portable"
+  },
+  {
+    "id": 8,
+    "name": "Ruler Set",
+    "description": "Set of 3 transparent plastic rulers (15cm, 30cm, 50cm) for precise measurements.",
+    "price": 2.8,
+    "rating": 4.5,
+    "advantage": "Clear markings, durable, accurate"
+  },
+  {
+    "id": 9,
+    "name": "Eraser Pack",
+    "description": "Pack of 5 soft erasers for pencil and graphite correction.",
+    "price": 1.99,
+    "rating": 4.2,
+    "advantage": "Non-smudging, soft texture, easy to clean"
+  },
+  {
+    "id": 10,
+    "name": "Desk Organizer",
+    "description": "Multi-compartment desk organizer to keep stationery and office supplies tidy.",
+    "price": 12.99,
+    "rating": 4.7,
+    "advantage": "Spacious, durable, stylish design"
+  }
+]

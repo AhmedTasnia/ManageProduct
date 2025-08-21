@@ -1,19 +1,22 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer sm:footer-horizontal bg-[#D6DAC8] text-black p-10">
+    <div className="container mx-auto ">
+      <footer className="footer footer-horizontal footer-center bg-[#D6DAC8] text-black p-10">
         <aside>
-         
-          <p>
-            Pen & Paper Ltd.
+          <a className="text-2xl font-bold ml-2">
+            <Image src={"/assets/logo.svg"} alt="Logo" width={40} height={40} />
+          </a>
+          <p className="font-bold">
+            Pen & Paper
             <br />
-            Providing Stationary since 2025
+            Providing reliable stationery since 1992
           </p>
+          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
         <nav>
-          <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg

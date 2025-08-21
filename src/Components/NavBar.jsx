@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -46,6 +47,14 @@ const NavBar = () => {
             </li>
             </ul>
           </div>
+          <a className="text-2xl font-bold ml-2">
+            <Image
+              src={"/assets/logo.svg"}
+              alt="Logo"
+              width={40}
+              height={40}
+            />
+          </a>
           <a className="text-2xl font-bold ml-2">Pen & Paper</a>
         </div>
 
@@ -73,7 +82,7 @@ const NavBar = () => {
 
         {/* Navbar End */}
         <div className="navbar-end">
-          <a className="btn bg-[#D6A99D] rounded-4xl  text-black transition">
+          <a className="btn btn-outline bg-[#D6A99D] rounded-4xl  text-black transition">
             Login
           </a>
         </div>
