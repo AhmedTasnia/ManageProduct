@@ -4,6 +4,7 @@
     "id": 1,
     "name": "Premium Gel Pen",
     "description": "Smooth writing gel pen with vibrant ink colors, ideal for note-taking and journaling.",
+    "image":"https://i.postimg.cc/VshD5KFR/446c53035b9716a9ea4095487e8c074d-jpg-720x720q80.jpg",
     "price": 2.99,
     "rating": 4.8,
     "advantage": "Smooth ink flow, comfortable grip, long-lasting"
@@ -12,6 +13,7 @@
     "id": 2,
     "name": "A4 Notebook",
     "description": "100-page ruled notebook suitable for school, office, or personal use.",
+    "image":"https://i.postimg.cc/fy1KFbbF/fc3c028fdce6e619461b5c9cba9eae04.jpg",
     "price": 4.5,
     "rating": 4.5,
     "advantage": "High-quality paper, durable cover, portable"
@@ -20,6 +22,7 @@
     "id": 3,
     "name": "Mechanical Pencil",
     "description": "0.5mm lead mechanical pencil with eraser, perfect for precision writing.",
+    "image":"https://i.postimg.cc/NFKDpXQm/Pilot-Mechanical-Pencil-Black-0-7-Pens.webp",
     "price": 3.2,
     "rating": 4.6,
     "advantage": "Refillable, precise lines, comfortable grip"
@@ -28,6 +31,7 @@
     "id": 4,
     "name": "Color Pencil Set",
     "description": "Set of 24 vibrant colored pencils for drawing, sketching, and coloring.",
+    "image":"https://i.postimg.cc/HxZ3wz1T/images.jpg",
     "price": 6.99,
     "rating": 4.7,
     "advantage": "Rich pigments, smooth blending, durable pencils"
@@ -36,6 +40,7 @@
     "id": 5,
     "name": "Highlighter Set",
     "description": "Pack of 6 neon highlighters, perfect for marking important text.",
+    "image":"https://i.postimg.cc/0Q2cK33t/81b266dced8541315042c0e7230cb1e3.jpg",
     "price": 5.5,
     "rating": 4.4,
     "advantage": "Bright colors, quick-dry ink, non-toxic"
@@ -44,6 +49,7 @@
     "id": 6,
     "name": "Sticky Notes",
     "description": "Multi-colored sticky notes pack for reminders and organizing work.",
+    "image":"https://i.postimg.cc/nL13zZdj/6a8eba79a1a260f71cc982863604a442.jpg",
     "price": 3.0,
     "rating": 4.3,
     "advantage": "Strong adhesive, easy to peel, reusable"
@@ -52,6 +58,7 @@
     "id": 7,
     "name": "Stapler",
     "description": "Compact stapler with 1000 staples included, ideal for office use.",
+    "image":"https://i.postimg.cc/7YCtNFLd/images-1.jpg",
     "price": 7.5,
     "rating": 4.6,
     "advantage": "Durable metal design, smooth stapling, portable"
@@ -60,6 +67,7 @@
     "id": 8,
     "name": "Ruler Set",
     "description": "Set of 3 transparent plastic rulers (15cm, 30cm, 50cm) for precise measurements.",
+    "image":"https://i.postimg.cc/yNCGxLs5/images-2.jpg",
     "price": 2.8,
     "rating": 4.5,
     "advantage": "Clear markings, durable, accurate"
@@ -68,6 +76,7 @@
     "id": 9,
     "name": "Eraser Pack",
     "description": "Pack of 5 soft erasers for pencil and graphite correction.",
+    "image":"https://i.postimg.cc/t4KKPXtB/images-3.jpg",
     "price": 1.99,
     "rating": 4.2,
     "advantage": "Non-smudging, soft texture, easy to clean"
@@ -76,6 +85,7 @@
     "id": 10,
     "name": "Desk Organizer",
     "description": "Multi-compartment desk organizer to keep stationery and office supplies tidy.",
+    "image":"https://i.postimg.cc/sD1vXc23/bc3f233b4b796fff74218b139ac76228-jpg-720x720q80.jpg",
     "price": 12.99,
     "rating": 4.7,
     "advantage": "Spacious, durable, stylish design"
