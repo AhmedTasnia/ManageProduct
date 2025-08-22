@@ -3,9 +3,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="container mx-auto">
-      <section className="bg-[#D6A99D] py-16">
-        <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center justify-between">
+   <section className="bg-[#D6A99D]  ">
+        <div className="container mx-auto  flex flex-col-reverse px-2 lg:flex-row items-center justify-between">
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -17,22 +16,19 @@ const Hero = () => {
               one place!
             </p>
             <div>
-              <a
-                href="#products"
-                className="inline-block bg-[#FBF3D5] text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-[#c98e82] transition"
-              >
+              
+              <button className=" bg-[#FBF3D5] text-black px-6  ">
                 Shop Now
-              </a>
+              </button>
             </div>
           </div>
 
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
-            <Image src={"/assets/file.svg"} alt="File" width={1000} height={840} />
+            <Image src={"https://i.postimg.cc/MTNCL2FX/1afb59e00ce809f5c6de21a2467284b7e68a3a7d.jpg"} alt="File" width={1000} height={840} />
           </div>
         </div>
       </section>
-    </div>
   );
 };
 

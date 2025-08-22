@@ -4,8 +4,9 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="shadow-md">
-      <div className="navbar bg-[#D6DAC8] px-4 lg:px-8">
+   <div className="">
+    <div className="shadow-md bg-[#D6DAC8] ">
+      <div className="navbar container mx-auto ">
         {/* Navbar Start */}
         <div className="navbar-start">
           {/* Mobile Dropdown */}
@@ -88,6 +89,7 @@ const NavBar = () => {
         </div>
       </div>
     </div>
+   </div> 
   );
 };
 
