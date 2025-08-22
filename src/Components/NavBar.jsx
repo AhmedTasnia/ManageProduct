@@ -83,9 +83,9 @@ const NavBar = () => {
 
         {/* Navbar End */}
         <div className="navbar-end">
-          <a className="btn btn-outline bg-[#D6A99D] rounded-4xl  text-black transition">
+          <Link href="/login" className="btn btn-outline bg-[#D6A99D] rounded-4xl  text-black transition">
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </div>
