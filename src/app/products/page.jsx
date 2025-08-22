@@ -6,10 +6,10 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/product.json") // ✅ matches your file name inside /public
+    fetch("/api/products")
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to fetch product.json");
+          throw new Error("Failed to fetch products from API");
         }
         return res.json();
       })
@@ -24,7 +24,7 @@ export default function Products() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <div
-            key={product.id}
+            key={product._id}
             className="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition flex flex-col justify-between"
           >
             <div>
@@ -33,11 +33,9 @@ export default function Products() {
               <p className="text-green-600 font-bold mb-2">
                 ${product.price}
               </p>
-              {/* <p className="text-yellow-500 mb-2">⭐ {product.rating}</p> */}
-              {/* <p className="text-sm text-gray-500 mb-4">{product.advantage}</p> */}
             </div>
             <div className="mt-auto">
-              <Link href={`/products/${product.id}`}>
+              <Link href={`/products/${product._id}`}>
                 <button className="w-full bg-[#D6A99D] text-black font-medium px-4 py-2 rounded-lg hover:bg-[#c48e7f] transition">
                   Details
                 </button>

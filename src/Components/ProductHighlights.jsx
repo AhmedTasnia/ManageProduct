@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductHighlights() {
   const products = [
     {
@@ -44,9 +46,12 @@ export default function ProductHighlights() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
-                <button className="bg-[#FBF3D5] text-black px-4 py-2 rounded-lg hover:bg-emerald-700 transition">
+                <Link
+                  href="/products"
+                  className="bg-[#FBF3D5] text-black px-4 py-2 rounded-lg hover:bg-emerald-700 transition inline-block"
+                >
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           ))}

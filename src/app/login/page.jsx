@@ -1,20 +1,45 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function LoginCard() {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
+  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Login submitted:", formData);
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        // store user info in localStorage
+  localStorage.setItem("user", JSON.stringify(data));
+  // Dispatch custom event so NavBar updates immediately
+  window.dispatchEvent(new Event("user-changed"));
+  router.push("/products"); // redirect after login
+      } else {
+        alert(data.error);
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Something went wrong!");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -22,9 +47,9 @@ export default function LoginCard() {
       <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex w-full max-w-4xl h-[600px]">
         <div className="hidden md:block w-1/2">
           <img
-            src="https://i.postimg.cc/V68S4GCX/Illustration-of-Woman-Understanding-Key-Data-Protection-and-Security-Steps-HD.webp" 
+            src="https://i.postimg.cc/V68S4GCX/Illustration-of-Woman-Understanding-Key-Data-Protection-and-Security-Steps-HD.webp"
             alt="Login"
-            className=" mt-40"
+            className="mt-40"
           />
         </div>
 
@@ -62,9 +87,10 @@ export default function LoginCard() {
               </div>
               <button
                 type="submit"
-                className="w-full py-2 bg-[#D6A99D] text-black font-medium rounded-lg hover:bg-[#c48e7f] transition"
+                disabled={loading}
+                className="w-full py-2 bg-[#D6A99D] text-black font-medium rounded-lg hover:bg-[#c48e7f] transition disabled:opacity-50"
               >
-                Login
+                {loading ? "Logging in..." : "Login"}
               </button>
             </form>
             <p className="text-center text-gray-600 mt-4">
