@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 
 export default function AddProductPage() {
   const router = useRouter();
@@ -39,8 +40,14 @@ export default function AddProductPage() {
       });
 
       if (res.ok) {
-        alert("✅ Product added successfully!");
-        router.push("/products"); 
+        Swal.fire({
+          icon: "success",
+          title: "Product Added!",
+          text: "✅ Product added successfully!",
+          confirmButtonColor: "#A4907C"
+        }).then(() => {
+          router.push("/products");
+        });
       } else {
         const data = await res.json();
         alert("❌ Failed: " + data.error);
